@@ -415,9 +415,18 @@ func (r *ToolRegistry) ToProviderDefs() []providers.ToolDefinition {
 			continue
 		}
 
-		name, _ := fn["name"].(string)
-		desc, _ := fn["description"].(string)
-		params, _ := fn["parameters"].(map[string]any)
+		name, ok := fn["name"].(string)
+		if !ok {
+			name = ""
+		}
+		desc, ok := fn["description"].(string)
+		if !ok {
+			desc = ""
+		}
+		params, ok := fn["parameters"].(map[string]any)
+		if !ok {
+			params = nil
+		}
 		metadata := promptMetadataForTool(entry.Tool)
 
 		definitions = append(definitions, providers.ToolDefinition{
