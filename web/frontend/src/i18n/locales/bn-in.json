@@ -99,6 +99,7 @@
     "contextCompressAt": "Compress at",
     "contextSummarizeAt": "Summarize at",
     "attachImage": "ছবি যোগ করুন",
+    "dropImagesActive": "Release to add images",
     "removeImage": "ছবি সরান",
     "uploadedImage": "আপলোড করা ছবি",
     "invalidImage": "\"{{name}}\" একটি সমর্থিত ছবি ফাইল নয়।",

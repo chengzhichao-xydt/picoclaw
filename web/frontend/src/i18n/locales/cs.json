@@ -76,6 +76,8 @@
     "copyMessage": "Kopírovat zprávu",
     "copyCode": "Kopírovat kód",
     "copiedLabel": "Zkopírováno",
+    "enableCodeWrap": "Wrap lines",
+    "disableCodeWrap": "Disable wrap",
     "expandCode": "Rozbalit kód",
     "collapseCode": "Sbalit kód",
     "history": "Historie",
